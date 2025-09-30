@@ -3,82 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Simplified</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>FES Website</title>
+    <link href="./style.css" rel="stylesheet" />
   </head>
-<!-- TEST COMMIT to GITHUB -->
+
   <body>
-    <section>
-      <nav>
-        <figure class="logo">
-          <img class="logo__img" src="./assets/FES.svg" alt="Logo" />
-        </figure>
-        <ul class="nav__links">
-          <li class="nav__link">
+    <header>
+      <nav class="nav__container">
+        <div class="nav__logo">
+          <img src="./assets/FES.svg" alt="FES Logo" />
+        </div>
+        <div class="nav__links">
+          <ul>
             <a href="#about">About</a>
-          </li>
-          <li class="nav__link">
             <a href="#discord">Discord</a>
-          </li>
-          <li class="nav__link">
             <a href="#contact">Contact</a>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </nav>
-      <header>
-        <div>
+
+      <section>
+        <div class="header__container">
           <h1>Best place to learn Frontend</h1>
           <p>Go from absolute beginner to pro with a simplified process</p>
           <button>Start Now</button>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="Homepage image" />
-        </figure>
-      </header>
-    </section>
+        <div class="header__img">
+          <img src="./assets/laptop.png" alt="Laptop" />
+        </div>
+      </section>
+    </header>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <div>
+        <div class="about__container--wrapper">
+          <div class="about__paragraph--wrapper">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              dolorum vel ab porro veritatis ullam velit. Excepturi qui
-              sapiente, dolores unde debitis autem inventore? Harum
-              necessitatibus numquam inventore sequi exercitationem.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+              corrupti dolores quod distinctio libero laudantium saepe,
+              voluptatibus aliquam voluptates hic dolorem sequi consequuntur
+              eveniet quidem eius unde. Odit, vel perferendis?
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              dolorum vel ab porro veritatis ullam velit. Excepturi qui
-              sapiente, dolores unde debitis autem inventore? Harum
-              necessitatibus numquam inventore sequi exercitationem.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae commodi deserunt beatae error reiciendis, voluptatibus
+              minima fugit quos vero, quo minus labore ad ab dolore a impedit
+              totam sunt accusantium.
             </p>
           </div>
-          <figure>
-            <img src="./assets/about.jpg" alt="Typing on a laptop" />
-          </figure>
+          <div class="about__img--wrapper">
+            <img src="./assets/about.jpg" alt="Working on a laptop" />
+          </div>
         </div>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <div>
-          <figure>
-            <img src="./assets/discord.png" alt="Discord" />
-          </figure>
-          <div>
+        <div class="discord__container--wrapper">
+          <div class="discord__img--wrapper">
+            <img src="./assets/discord.png" alt="Discord Logo" />
+          </div>
+          <div class="discord__paragraph--wrapper">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              dolorum vel ab porro veritatis ullam velit. Excepturi qui
-              sapiente, dolores unde debitis autem inventore? Harum
-              necessitatibus numquam inventore sequi exercitationem.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+              corrupti dolores quod distinctio libero laudantium saepe,
+              voluptatibus aliquam voluptates hic dolorem sequi consequuntur
+              eveniet quidem eius unde. Odit, vel perferendis?
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              dolorum vel ab porro veritatis ullam velit. Excepturi qui
-              sapiente, dolores unde debitis autem inventore? Harum
-              necessitatibus numquam inventore sequi exercitationem.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae commodi deserunt beatae error reiciendis, voluptatibus
+              minima fugit quos vero, quo minus labore ad ab dolore a impedit
+              totam sunt accusantium.
             </p>
           </div>
         </div>
@@ -87,13 +84,14 @@
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
-          <label for="">Email</label>
-          <input type="email" placeholder="jane@example.com" />
-          <label for="">Message</label>
+          <label for="email">Email</label>
+          <input name="email" id="email" type="email" />
+          <label for="message">Message</label>
           <textarea
-            name=""
-            id=""
+            name="message"
+            id="message"
             placeholder="Nice website, let's connect!"
+            rows="10"
           ></textarea>
           <button>Submit</button>
         </form>
@@ -101,14 +99,14 @@
     </main>
 
     <footer>
-      <img src="./assets/FES.svg" alt="Logo" />
-      <div>
+      <img src="./assets/FES.svg" alt="FES Logo" />
+      <ul>
         <a href="#about">About</a>
         <a href="#discord">Discord</a>
         <a href="#contact">Contact</a>
-        <a href="">Courses</a>
-      </div>
-      <p>Copyright &copy; Frontend Simplified</p>
+        <a href="#courses">Courses</a>
+      </ul>
+      <p>Copyright &copy; 2025 Frontend Simplified</p>
     </footer>
   </body>
 </html>
