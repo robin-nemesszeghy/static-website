@@ -1,38 +1,85 @@
+/* TO REMEMBER
+
+1. Add padding on the container element first (i.e. nav, header, etc.)
+2. calc() for calculating the view height above the fold (nav + header)
+3. nav and header wrapped within section for semantic html
+4. Logo image in nav can be resized based on height, but the actual page cannot? Why not resize logo based on width?
+5. Add a row (container) if the elements need to be further grouped and styled together*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-h2 {
-  font-size: 44px;
-  text-align: center;
-}
-
-.section__container--wrapper {
+.row {
+  width: 100%;
+  max-width: 1300px;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
-.paragraphs {
-  margin: 12px;
-  font-size: 20px;
+a {
+  list-style: none;
+  text-decoration: underline;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 button {
   background-color: #49c0c8;
   color: white;
   border: none;
+  padding: 8px 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section__description {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.section__description--wrapper {
+  width: 60%;
+  padding: 0 24px;
+}
+
+.section__description--para {
+  /* margin: 12px; */
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.section__img--wrapper {
+  width: 40%;
+  padding: 0 24px;
+}
+
+img {
+  width: 100%;
 }
 
 /* NAVIGATION */
 
-.nav__container {
-  height: 50px;
+nav {
+  /* Added height and padding */
+  height: 70px;
+  padding: 0 16px;
   background-color: #c1feff;
   display: flex;
   justify-content: space-between;
@@ -40,82 +87,102 @@ button {
 }
 
 .nav__logo {
-  height: 40px;
-  margin: 8px;
+  /* height: 40px; */
+  width: 300px;
+  /* margin: 8px; */
 }
 
 .nav__links {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 
 .nav__link {
-  text-decoration: underline;
-  color: black;
-  font-size: 20px;
-  font-weight: 800;
-  padding: 12px;
+  padding-left: 16px;
+  /* padding: 12px; */
 }
 
 /* HEADER */
 
-.header__container {
-  height: 100vh;
-  min-width: 1200px;
+header {
   background-color: #e6d7fe;
+  height: calc(100vh - 70px);
+  /* Added padding */
+  padding: 24px;
+  /* min-width: 1200px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header__text {
+/* .header__text {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-}
+} */
 
 h1 {
-  text-align: left;
-  margin: 8px;
-  font-size: 48px;
+  font-size: 72px;
+  /* text-align: left; */
+  /* margin: 8px; */
 }
 
-.subtitle {
-  text-align: left;
-  font-size: 24px;
-  font-weight: 500;
-  margin: 8px;
+.subheader {
+  font-size: 36px;
+  /* text-align: left; */
+  /* font-weight: 500; */
+  /* margin: 8px; */
+  margin: 16px 0 24px 0;
 }
 
-.start {
+/* .start {
   margin: 8px;
-  padding: 4px;
-  cursor: pointer;
+} */
+
+#about,
+#discord,
+#contact,
+footer {
+  padding: 48px 0;
 }
 
 /* ABOUT */
 
 #about {
   background-color: #f7ffd6;
-  padding: 32px;
 }
 
 /* DISCORD */
 
 #discord {
   background-color: #c7ffff;
-  padding: 32px;
 }
 
 /* CONTACT */
 
 #contact {
   background-color: #d6e6ff;
-  padding: 32px;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
 }
 
 /* FOOTER */
@@ -124,12 +191,13 @@ footer {
   background-color: #a1f3ff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .footer__links {
   list-style: none;
+  margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,10 +208,12 @@ footer {
   color: black;
   font-size: 20px;
   font-weight: 800;
-  padding: 12px;
+  padding: 0 16px;
 }
 
 .footer__logo {
-  height: 40px;
-  margin: 8px;
+  /* height: 40px; */
+  /* margin: 8px; */
+  max-width: 480px;
+  margin-bottom: 16px;
 }

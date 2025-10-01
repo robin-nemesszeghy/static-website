@@ -8,8 +8,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="nav__container">
+    <section>
+      <nav>
         <img class="nav__logo" src="./assets/FES.svg" alt="FES Logo" />
         <ul class="nav__links">
           <li><a class="nav__link" href="#about">About</a></li>
@@ -18,86 +18,94 @@
         </ul>
       </nav>
 
-      <section class="header__container">
-        <div class="header__text">
-          <h1>Best place to learn Frontend</h1>
-          <p class="subtitle">
-            Go from absolute beginner to pro with a simplified process
-          </p>
-          <button class="start">Start Now</button>
+      <header>
+        <div class="row">
+          <div class="header__text">
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">
+              Go from absolute beginner to pro with a simplified process
+            </p>
+            <button>Start Now</button>
+          </div>
+          <figure class="header__img">
+            <img src="./assets/laptop.png" alt="Homepage Image" />
+          </figure>
         </div>
-        <figure class="header__img">
-          <img src="./assets/laptop.png" alt="Homepage Image" />
-        </figure>
-      </section>
-    </header>
+      </header>
+    </section>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div class="section__container--wrapper">
-          <div class="paragraph__wrapper">
-            <p class="paragraphs">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-              corrupti dolores quod distinctio libero laudantium saepe,
-              voluptatibus aliquam voluptates hic dolorem sequi consequuntur
-              eveniet quidem eius unde. Odit, vel perferendis?
-            </p>
-            <p class="paragraphs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestiae commodi deserunt beatae error reiciendis, voluptatibus
-              minima fugit quos vero, quo minus labore ad ab dolore a impedit
-              totam sunt accusantium.
-            </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis corrupti dolores quod distinctio libero laudantium
+                saepe, voluptatibus aliquam voluptates hic dolorem sequi
+                consequuntur eveniet quidem eius unde. Odit, vel perferendis?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae commodi deserunt beatae error reiciendis, voluptatibus
+                minima fugit quos vero, quo minus labore ad ab dolore a impedit
+                totam sunt accusantium.
+              </p>
+            </div>
+            <figure class="section__img--wrapper">
+              <img src="./assets/about.jpg" alt="Working on a laptop" />
+            </figure>
           </div>
-          <figure class="about__img--wrapper">
-            <img src="./assets/about.jpg" alt="Working on a laptop" />
-          </figure>
         </div>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <div class="section__container--wrapper">
-          <figure class="discord__img--wrapper">
-            <img src="./assets/discord.png" alt="Discord Logo" />
-          </figure>
-          <div class="paragraph__wrapper">
-            <p class="paragraphs">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-              corrupti dolores quod distinctio libero laudantium saepe,
-              voluptatibus aliquam voluptates hic dolorem sequi consequuntur
-              eveniet quidem eius unde. Odit, vel perferendis?
-            </p>
-            <p class="paragraphs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestiae commodi deserunt beatae error reiciendis, voluptatibus
-              minima fugit quos vero, quo minus labore ad ab dolore a impedit
-              totam sunt accusantium.
-            </p>
+        <div class="row">
+          <div class="section__description">
+            <figure class="section__img--wrapper">
+              <img src="./assets/discord.png" alt="Discord Logo" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis corrupti dolores quod distinctio libero laudantium
+                saepe, voluptatibus aliquam voluptates hic dolorem sequi
+                consequuntur eveniet quidem eius unde. Odit, vel perferendis?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae commodi deserunt beatae error reiciendis, voluptatibus
+                minima fugit quos vero, quo minus labore ad ab dolore a impedit
+                totam sunt accusantium.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <form action="">
-          <label for="email">Email</label>
-          <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="jane@example.com"
-          />
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Nice website, let's connect!"
-            rows="10"
-          ></textarea>
-          <button>Submit</button>
-        </form>
+        <div class="row">
+          <form action="">
+            <label for="email">Email</label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="jane@example.com"
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Nice website, let's connect!"
+              rows="10"
+            ></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
       </section>
     </main>
 
