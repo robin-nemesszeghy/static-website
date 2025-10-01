@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: roboto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 44px;
+  text-align: center;
+}
+
+.section__container--wrapper {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.paragraphs {
+  margin: 12px;
+  font-size: 20px;
+}
+
+button {
+  background-color: #49c0c8;
+  color: white;
+  border: none;
+}
+
+/* NAVIGATION */
+
+.nav__container {
+  height: 50px;
+  background-color: #c1feff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 40px;
+  margin: 8px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  text-decoration: underline;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 12px;
+}
+
+/* HEADER */
+
+.header__container {
+  height: 100vh;
+  min-width: 1200px;
+  background-color: #e6d7fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: left;
+  margin: 8px;
+  font-size: 48px;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 8px;
+}
+
+.start {
+  margin: 8px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* ABOUT */
+
+#about {
+  background-color: #f7ffd6;
+  padding: 32px;
+}
+
+/* DISCORD */
+
+#discord {
+  background-color: #c7ffff;
+  padding: 32px;
+}
+
+/* CONTACT */
+
+#contact {
+  background-color: #d6e6ff;
+  padding: 32px;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #a1f3ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  text-decoration: underline;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 12px;
+}
+
+.footer__logo {
+  height: 40px;
+  margin: 8px;
+}

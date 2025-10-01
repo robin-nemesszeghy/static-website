@@ -10,68 +10,66 @@
   <body>
     <header>
       <nav class="nav__container">
-        <div class="nav__logo">
-          <img src="./assets/FES.svg" alt="FES Logo" />
-        </div>
-        <div class="nav__links">
-          <ul>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-          </ul>
-        </div>
+        <img class="nav__logo" src="./assets/FES.svg" alt="FES Logo" />
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#discord">Discord</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
       </nav>
 
-      <section>
-        <div class="header__container">
+      <section class="header__container">
+        <div class="header__text">
           <h1>Best place to learn Frontend</h1>
-          <p>Go from absolute beginner to pro with a simplified process</p>
-          <button>Start Now</button>
+          <p class="subtitle">
+            Go from absolute beginner to pro with a simplified process
+          </p>
+          <button class="start">Start Now</button>
         </div>
-        <div class="header__img">
-          <img src="./assets/laptop.png" alt="Laptop" />
-        </div>
+        <figure class="header__img">
+          <img src="./assets/laptop.png" alt="Homepage Image" />
+        </figure>
       </section>
     </header>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div class="about__container--wrapper">
-          <div class="about__paragraph--wrapper">
-            <p>
+        <div class="section__container--wrapper">
+          <div class="paragraph__wrapper">
+            <p class="paragraphs">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               corrupti dolores quod distinctio libero laudantium saepe,
               voluptatibus aliquam voluptates hic dolorem sequi consequuntur
               eveniet quidem eius unde. Odit, vel perferendis?
             </p>
-            <p>
+            <p class="paragraphs">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Molestiae commodi deserunt beatae error reiciendis, voluptatibus
               minima fugit quos vero, quo minus labore ad ab dolore a impedit
               totam sunt accusantium.
             </p>
           </div>
-          <div class="about__img--wrapper">
+          <figure class="about__img--wrapper">
             <img src="./assets/about.jpg" alt="Working on a laptop" />
-          </div>
+          </figure>
         </div>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <div class="discord__container--wrapper">
-          <div class="discord__img--wrapper">
+        <div class="section__container--wrapper">
+          <figure class="discord__img--wrapper">
             <img src="./assets/discord.png" alt="Discord Logo" />
-          </div>
-          <div class="discord__paragraph--wrapper">
-            <p>
+          </figure>
+          <div class="paragraph__wrapper">
+            <p class="paragraphs">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               corrupti dolores quod distinctio libero laudantium saepe,
               voluptatibus aliquam voluptates hic dolorem sequi consequuntur
               eveniet quidem eius unde. Odit, vel perferendis?
             </p>
-            <p>
+            <p class="paragraphs">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Molestiae commodi deserunt beatae error reiciendis, voluptatibus
               minima fugit quos vero, quo minus labore ad ab dolore a impedit
@@ -85,7 +83,12 @@
         <h2>Contact</h2>
         <form action="">
           <label for="email">Email</label>
-          <input name="email" id="email" type="email" />
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="jane@example.com"
+          />
           <label for="message">Message</label>
           <textarea
             name="message"
@@ -99,12 +102,12 @@
     </main>
 
     <footer>
-      <img src="./assets/FES.svg" alt="FES Logo" />
-      <ul>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="#courses">Courses</a>
+      <img class="footer__logo" src="./assets/FES.svg" alt="FES Logo" />
+      <ul class="footer__links">
+        <li><a class="footer__link" href="#about">About</a></li>
+        <li><a class="footer__link" href="#discord">Discord</a></li>
+        <li><a class="footer__link" href="#contact">Contact</a></li>
+        <li><a class="footer__link" href="">Courses</a></li>
       </ul>
       <p>Copyright &copy; 2025 Frontend Simplified</p>
     </footer>
