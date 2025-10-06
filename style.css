@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: black;
   font-weight: 700;
@@ -76,7 +80,7 @@ img {
 #discord,
 #contact,
 footer {
-  padding: 40px 0;
+  padding: 48px 0;
 }
 
 /* NAVIGATION */
@@ -99,6 +103,8 @@ nav {
 header {
   background-color: #e7d8ff;
   height: calc(100vh - 70px);
+  width: 100%;
+  /* min-width: 1200px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,10 +138,12 @@ h1 {
 }
 
 form {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 label {
@@ -144,8 +152,8 @@ label {
 
 input,
 textarea {
-  font-size: 24px;
-  padding: 8px 12px;
+  font-size: 20px;
+  padding: 6px 12px;
   margin-bottom: 24px;
 }
 
@@ -165,4 +173,64 @@ footer {
 
 .footer__links {
   padding: 16px 0 24px 0;
+}
+
+@media (max-width: 728px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .home__description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .subheading {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .home__description--button {
+    max-width: 240px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .section__description {
+    flex-direction: column;
+  }
+
+  .section__description--wrapper {
+    width: 100%;
+  }
+
+  .section__img--wrapper {
+    width: 100%;
+  }
+
+  #discord .section__description {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    padding: 48px 24px;
+  }
+
+  .footer__logo {
+    max-width: 360px;
+  }
+
+  .footer__link {
+    padding: 0 4px;
+    font-size: 18px;
+  }
 }
