@@ -102,9 +102,8 @@ nav {
 
 header {
   background-color: #e7d8ff;
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
   width: 100%;
-  /* min-width: 1200px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,6 +177,10 @@ footer {
 @media (max-width: 728px) {
   .row {
     flex-direction: column;
+  }
+
+  header {
+    padding: 48px 0 48px 0;
   }
 
   .home__description {
